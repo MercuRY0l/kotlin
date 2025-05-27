@@ -46,11 +46,12 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
 
-            val character_name = listOf("Scorpion", "Noob Saibot", "Sub-Zero")
-            val character_image = listOf(R.drawable.img, R.drawable.img_1, R.drawable.img_2)
+            val character_name = listOf("Scorpion", "Noob Saibot", "Sub-Zero", "Milena", "Rayden")
+            val character_image = listOf(R.drawable.img, R.drawable.img_1, R.drawable.img_2, R.drawable.img_3, R.drawable.img_4)
             val character_description = listOf(" Воскрешённый ниндзя и дух мщения. После гибели от рук Саб-Зиро он вернулся из Преисподней, чтобы отомстить и восстановить честь своего клана Ширай Рю. Его фирменный приём – «Get over here!».",
             "Тень и смерть в одном лице. Ранее был оригинальным Саб-Зиро, убитым Скорпионом, но возрождён как тёмный воин Куан Чи",
-                "Мастер криомантии и защитник клана Лин Куэй. После смерти брата Би-Хана (оригинального Саб-Зиро) mantle принял Куай Лян")
+                "Мастер криомантии и защитник клана Лин Куэй. После смерти брата Би-Хана (оригинального Саб-Зиро) mantle принял Куай Лян", " – Гибрид таркатанки и эденийки, созданная колдуном Шан Цзуном. Обладает внешностью Китаны, но с жуткой пастью таркатана. Нестабильна, жестока и алчна до власти. Часто стремится занять трон Внешнего мира.",
+                "Бог грома и защитник Земного Царства. Мудрый, могущественный и преданный делу баланса. Управляет молнией и нередко берёт на себя роль лидера в борьбе с силами зла. Один из старейших и самых знаковых бойцов серии.")
 
             val pagerState = rememberPagerState { character_name.size }
 
